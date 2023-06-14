@@ -16,6 +16,7 @@ services:
 
   kong-migrations:
     image: kong
+    container_name: kong-migrations
     environment:
       - KONG_DATABASE=postgres
       - KONG_PG_HOST=kong-database
